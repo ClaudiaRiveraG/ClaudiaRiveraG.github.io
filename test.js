@@ -1,3 +1,1 @@
-function myFunction() {
-  alert("Hello");
-}
+alert("hello from script file");
