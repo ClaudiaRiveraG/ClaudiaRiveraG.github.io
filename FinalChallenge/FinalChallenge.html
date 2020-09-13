@@ -15,59 +15,60 @@
 				Ultimate Trivia Challenge
         	</div>
         	
-    	</div>
-		<div id="left">
-			<h2>Challenge yourself!</h2>
-			<p>Try our trivia and get your score</p>
-			
-			<a href="../index.html"><button>Link To Claudia Rivera Portfolio</button></a>
-		    
 		</div>
 		
-	<div id="center">
-		<h2>Final Quiz </h2>
-		<p class="thick">1. Select a topic</p>
+		<div id="left">
+			<h2>Challenge yourself!</h2>
+			<p>Try our trivia and get your score</p>	
+			<a href="../index.html"><button>Link To Claudia Rivera Portfolio</button></a>    
+		</div>	
+
+		<div id="center">
+			<h2>Final Quiz </h2>
+			<p><b>1. Select a topic</b></p>
 			
-		<form onsubmit="checkGraded(); return false" name="quizForm">
-		<table> 
-			<tr><input type="radio" name="topics" value="Java" checked/>Java  
-			<input type="radio" name="topics" value="Compu"/>Programming
-			<input type="radio" name="topics" value="html"/>HTML				 
-		</table> 
-		<p class="thick">2. Validate your data before you start the quiz</p>
-		<table>
-		<tr><td> First Name:</td><td><input  type="text"  name="fname" size="25" maxlength="20" pattern="[A-za-z-]+" placeholder="only letters"  id="fname"/></td></tr>
-		<tr><td> Last Name:</td><td><input type="text" pattern="^[a-zA-Z-]+$"  placeholder="only letters"  id="lname" maxlength="25"/></td></tr>
-		<tr><td>Province or territories:</td>   
-			<td><select id="province" >
-				<option value="AB"> Alberta</option>
-				<option value="BC"> British Columbia</option>
-				<option value="NB"> New Brunswick</option>
-				<option value="NL">Newfoundland and Labrador</option>
-				<option value="NS"> Nova Scotia</option>
-				<option value="ON">Ontario</option>
-				<option value="MB"> Manitoba</option>
-				<option value="SK">  Saskatchewan </option>
-				<option value="NT"> Northwest Territories </option>
-				<option value="YT"> Yukon</option>
-				<option value="NU">Nunavut</option>
-				</select></td>
-		</tr>
-		<tr><td> City:</td><td><input type="text" pattern= "^[a-zA-Z-]+$" id = "city" maxlength = "25"/></td></tr>
-		</table>
-			<p class="thick"> 3. Click to validate your data and get the quiz</p>
+			<form onsubmit="checkGraded(); return false" name="quizForm">
+				<table> 
+					<tr><input type="radio" name="topics" value="Java" checked/>Java  
+					<input type="radio" name="topics" value="Compu"/>Programming
+					<input type="radio" name="topics" value="html"/>HTML				 
+				</table> 
+			<p><b>2. Validate your data before you start the quiz</b></p>
+				
+				<table>
+					<tr><td> First Name:</td><td><input  type="text"  name="fname" size="25" maxlength="20" pattern="[A-za-z-]+" placeholder="only letters"  id="fname"/></td></tr>
+					<tr><td> Last Name:</td><td><input type="text" pattern="^[a-zA-Z-]+$"  placeholder="only letters"  id="lname" maxlength="25"/></td></tr>
+					<tr><td>Province or territories:</td>   
+					<td><select id="province" >
+						<option value="AB"> Alberta</option>
+						<option value="BC"> British Columbia</option>
+						<option value="NB"> New Brunswick</option>
+						<option value="NL">Newfoundland and Labrador</option>
+						<option value="NS"> Nova Scotia</option>
+						<option value="ON">Ontario</option>
+						<option value="MB"> Manitoba</option>
+						<option value="SK">  Saskatchewan </option>
+						<option value="NT"> Northwest Territories </option>
+						<option value="YT"> Yukon</option>
+						<option value="NU">Nunavut</option>
+						</select></td>
+					</tr>
+					<tr><td> City:</td><td><input type="text" pattern= "^[a-zA-Z-]+$" id = "city" maxlength = "25"/></td></tr>
+				</table>
+			<p><b> 3. Click to validate your data and get the quiz</b></p>
 			<button type="button" id="json-local" onclick="validateInfo(this)">Get Quiz </button>
-		   <!----<input type="Reset" value="Clear" >---->
+			  
+			<!----<input type="Reset" value="Clear" >---->
 			
 			<div id="quiz"></div>
-		   <!------quiz----->
+		  	 <!------quiz----->
 			
-			<div class="test" id="test">
+				<div class="test" id="test">
 				<input type="submit" value="Get Score" id="myScore"> 
-			</div>
+				</div>
 		
-		</form>
-		<div id="results" ></div>
+			</form>
+			<div id="results" ></div>
 		</div>
 	</body>
 </html>

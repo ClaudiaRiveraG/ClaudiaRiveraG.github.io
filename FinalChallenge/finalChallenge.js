@@ -109,10 +109,10 @@ function checkField(fieldValue) {
 
 var answers;
 //
-//Read jason for Programming topics
+//Read Jason for Programming topics
 //
 function loadLocal(element) {
-	var i, j, x = "";
+	var i, j, quizContent= "";
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
@@ -120,15 +120,15 @@ function loadLocal(element) {
 			var answer = jsonObject.finalquiz.rightanswers;
 			answers = answer.split(",");
 			for (i in jsonObject.finalquiz.question) {
-				x += "<p>" + jsonObject.finalquiz.question[i].qnumber + ". " + jsonObject.finalquiz.question[i].qtitle + "</p>";
-				x += "<p><input type=\"radio\" name=\"question" + i + "\" value=\"a\">a. " + jsonObject.finalquiz.question[i].a + "<br>";
-				x += "<input type=\"radio\" name=\"question" + i + "\" value=\"b\">b. " + jsonObject.finalquiz.question[i].b + "<br>";
-				x += "<input type=\"radio\" name=\"question" + i + "\" value=\"c\">c. " + jsonObject.finalquiz.question[i].c + "<br>";
-				x += "<input type=\"radio\" name=\"question" + i + "\" value=\"d\">d. " + jsonObject.finalquiz.question[i].d + "<br>";
+				quizContent += "<p><b>" + jsonObject.finalquiz.question[i].qnumber + ". " + jsonObject.finalquiz.question[i].qtitle + "</b></p>";
+				quizContent += "<p><input type=\"radio\" name=\"question" + i + "\" value=\"a\">a. " + jsonObject.finalquiz.question[i].a + "<br>";
+				quizContent += "<input type=\"radio\" name=\"question" + i + "\" value=\"b\">b. " + jsonObject.finalquiz.question[i].b + "<br>";
+				quizContent += "<input type=\"radio\" name=\"question" + i + "\" value=\"c\">c. " + jsonObject.finalquiz.question[i].c + "<br>";
+				quizContent += "<input type=\"radio\" name=\"question" + i + "\" value=\"d\">d. " + jsonObject.finalquiz.question[i].d + "<br>";
 			}
 
 			document.getElementById("test").style.visibility = "visible"; //Make the button submit answer visible
-			document.getElementById("quiz").innerHTML = x;
+			document.getElementById("quiz").innerHTML =  quizContent;
 		}
 	};
 	xhttp.open("GET", "content/finalquiz.json", true);
@@ -147,7 +147,7 @@ function loadLocalJ(element) {
 			var answer = jsonObject.javaquiz.rightanswers;
 			answers = answer.split(",");
 			for (i in jsonObject.javaquiz.question) {
-				x += "<p>" + jsonObject.javaquiz.question[i].qnumber + ". " + jsonObject.javaquiz.question[i].qtitle + "</p>";
+				x += "<p></b>" + jsonObject.javaquiz.question[i].qnumber + ". " + jsonObject.javaquiz.question[i].qtitle + "</b></p>";
 				x += "<p><input type=\"radio\" name=\"question" + i + "\" value=\"a\">a. " + jsonObject.javaquiz.question[i].a + "<br>";
 				x += "<input type=\"radio\" name=\"question" + i + "\" value=\"b\">b. " + jsonObject.javaquiz.question[i].b + "<br>";
 				x += "<input type=\"radio\" name=\"question" + i + "\" value=\"c\">c. " + jsonObject.javaquiz.question[i].c + "<br>";
@@ -182,7 +182,7 @@ function loadLocalH(element) {
 			var answer = jsonObject.htmlquiz.rightanswers;
 			answers = answer.split(",");
 			for (i in jsonObject.htmlquiz.question) {
-				x += "<p>" + jsonObject.htmlquiz.question[i].qnumber + ". " + jsonObject.htmlquiz.question[i].qtitle + "</p>";
+				x += "<p><b>" + jsonObject.htmlquiz.question[i].qnumber + ". " + jsonObject.htmlquiz.question[i].qtitle + "</b></p>";
 				x += "<p><input type=\"radio\" name=\"question" + i + "\" value=\"a\">a. " + jsonObject.htmlquiz.question[i].a + "<br>";
 				x += "<input type=\"radio\" name=\"question" + i + "\" value=\"b\">b. " + jsonObject.htmlquiz.question[i].b + "<br>";
 				x += "<input type=\"radio\" name=\"question" + i + "\" value=\"c\">c. " + jsonObject.htmlquiz.question[i].c + "<br>";
