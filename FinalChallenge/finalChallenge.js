@@ -320,7 +320,7 @@ function graded() {
 		var mess = "You need to study more"
 	}
 
-	if (result > +80 && result <= 100) {
+	if (result >= 80 && result <= 100) {
 		var mess = "Excellent! You got it!"
 	}
 
