@@ -1,0 +1,47 @@
+{
+  "javaquiz": {
+    "rightanswers": "a,c,d,a,c",
+    "question": [
+      {
+        "qnumber": "1",
+        "qtitle": "Which keyword is used to import a package from the Java API library?",
+        "a": "import",
+        "b": "library",
+        "c": "package",
+        "d": "getlib"
+      },
+      {
+        "qnumber": "2",
+        "qtitle": " Select the method that can be used to find the highest value of x and y",
+        "a": "Math.maximum(x,y)",
+        "b": "Math.maxNum(x,y)",
+        "c": "Math.max(x,y)",
+        "d": "Math.largest(x,y)"
+      },
+      {
+        "qnumber": "3",
+        "qtitle": "Which method can be used to return a string in upper case letters?",
+        "a": "touppercase()",
+        "b": "upperCase()",
+        "c": "tuc()",
+        "d": "toUpperCase()"
+      },
+      {
+        "qnumber": "4",
+        "qtitle": "Which method can be used to find the length of a string?",
+        "a": "length()",
+        "b": "getSize()",
+        "c": "len()",
+        "d": "getLength()"
+      },
+      {
+        "qnumber": "5",
+        "qtitle": "Which data type is used to create a variable that should store text?",
+        "a": "Txt",
+        "b": "string",
+        "c": "String",
+        "d": "myString"
+      }
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+body{
+  font-family:sans-serif;
+}
+td,th,tr {
+ 	padding: 10px;
+  	border:solid 1px #eee;
+}
+td.result
+{
+	
+	text-align: center;
+}
+h1,h2,h3{
+	font-family: 'Fredoka One', cursive;
+	color:#0d476F;
+}
+p.thick{
+	font-weight: bold;
+}
+
+.title{
+	color: darkblue;
+	font-size: 20px
+}
+
+input, select, button {
+  border:solid 1px #ccc;
+  border-radius: 5px;
+  padding:7px 14px;
+  margin-bottom:10px
+}
+
+.nBorder{
+	border: none;
+}
+
+.result:hover{
+	
+	background-color: lightblue;
+}
+
+error{
+ background-color:red;	
+}
+.test{
+	visibility:hidden;
+}
+#header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+	background-color: #0d476F;
+    color: #fff;
+    height: 100px;
+    border-bottom: 1px solid #d3d3d3;
+	font-family: 'Fredoka One', cursive;
+	
+}
+
+/* header*/
+#header-left {
+    font-size: 12pt;			
+    width: 100px;
+    float: left;
+	
+}
+
+#header-middle {
+	font-size: 50px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+	padding-top: 5px;
+    padding-bottom: 5px;
+}
+/*Week10*/
+#left {	
+	float: left;
+	padding: 20px;
+	width: 200px;
+	
+}
+
+#center {
+	margin-left: 300px;
+	margin-right: 100px;
+	padding: 20px;	
+	border-left: navy 1px Solid;
+	border-right: navy 1px Solid;
+	
+}
+/*table header*/
+.mytext {
+    width: 100px;
+}
+
+p.graded{
+	font-size: 20px;
+	font-size: 20px;
+	color:dimgrey;
+}
+
+.small{
+    width: 40%;
+	height:40%;
+}

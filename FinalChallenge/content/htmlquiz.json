@@ -1,0 +1,47 @@
+{
+  "htmlquiz": {
+    "rightanswers": "c,a,b,b,d",
+    "question": [
+      {
+        "qnumber": "1",
+        "qtitle": "What does HTML stand for?",
+        "a": "Home Tool Markup Language",
+        "b": "Hyperlinks and Text Markup Language",
+        "c": "Hyper Text Markup Language",
+        "d": "Hiperlink Tool Markup Language"
+      },
+      {
+        "qnumber": "2",
+        "qtitle": "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed?",
+        "a": "alt",
+        "b": "title",
+        "c": "longdesc",
+        "d": "src"
+      },
+      {
+        "qnumber": "3",
+        "qtitle": "In HTML, onblur and onfocus are:",
+        "a": "HTML elements",
+        "b": "Event attributes",
+        "c": "Style attributes",
+        "d": "HTML tags"
+      },
+      {
+        "qnumber": "4",
+        "qtitle": "Which character is used to indicate an end tag?",
+        "a": "<",
+        "b": "/",
+        "c": "*",
+        "d": ")"
+      },
+      {
+        "qnumber": "5",
+        "qtitle": "Which attribute is used to specify that an input field must be filled out?",
+        "a": "formValidate",
+        "b": "validate",
+        "c": "placeholder",
+        "d": "required"
+      }
+    ]
+  }
+}
