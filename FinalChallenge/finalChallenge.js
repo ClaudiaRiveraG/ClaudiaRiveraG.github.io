@@ -324,7 +324,7 @@ function graded() {
 		var mess = "Excellent! You got it!"
 	}
 
-	var txt = "<h2>Quiz Results</h2><hr>" + "<p class=\"graded\">" + result + "%" + "(" + total + "/5 correct) </p>" + "<b>" + mess + "</b><br><p>" + firstName + " " + lastName + "<br>" + city + ", " + province + "</p";
+	var txt = "<h2>Quiz Results</h2><hr>" + "<p>" + result + "%" + "(" + total + "/5 correct) </p>" + "<b>" + mess + "</b><br><p>" + firstName + " " + lastName + "<br>" + city + ", " + province + "</p";
 	document.getElementById("results").innerHTML = txt;
 
 	return false;
