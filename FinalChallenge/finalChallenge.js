@@ -109,7 +109,7 @@ function checkField(fieldValue) {
 
 var answers;
 //
-//Read Jason for Programming topics
+//Read JSON for Programming topics
 //
 function loadLocal(element) {
 	var i, j, quizContent= "";
